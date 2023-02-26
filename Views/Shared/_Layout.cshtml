@@ -1,0 +1,146 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title - My ASP.NET Application</title>
+    <link href="~/css/style-starter.css" rel="stylesheet" />
+    <a href="~/fonts/fontawesome-webfont.eot">~/fonts/fontawesome-webfont.eot</a>
+    <img src="~/fonts/fontawesome-webfont.svg" />
+    <a href="~/fonts/fontawesome-webfont.ttf"></a>
+    <a href="~/fonts/fontawesome-webfont.woff"></a>
+    <a href="~/fonts/fontawesome-webfont.woff2"></a>
+    <a href="~/fonts/FontAwesome.otf"></a>
+    <script src="~/js/all.js"></script>
+    <script src="~/js/app.js"></script>
+    <script src="~/js/bootstrap.min.js"></script>
+    <script src="~/js/jquery-3.3.1.min.js"></script>
+    <script src="~/js/owl.carousel.js"></script>
+    <script src="~/js/particles.min.js.js"></script>
+    <script src="~/js/popper.min.js"></script>
+    <script src="~/js/script.js"></script>
+
+
+
+
+
+
+</head>
+<body>
+    <header id="site-header" class="fixed-top">
+        <div class="container">
+            <nav class="navbar navbar-expand-lg navbar-dark stroke">
+                <a class="navbar-brand" href="index.html">
+                    <span class="fa fa-BOAT RESTAURANT"></span> BOAT RESTAURANT
+                </a>
+                <!-- if logo is image enable this
+                <a class="navbar-brand" href="#index.html">
+                    <img src="image-path" alt="Your logo" title="Your logo" style="height:35px;" />
+                </a> -->
+                <button class="navbar-toggler  collapsed bg-gradient" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon fa icon-expand fa-bars"></span>
+                    <span class="navbar-toggler-icon fa icon-close fa-times"></span>
+
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item home__active">
+                            <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item about__active">
+                            <a class="nav-link" href="about.html">About</a>
+                        </li>
+                        <li class="nav-item services__active">
+                            <a class="nav-link" href="services.html">Menu</a>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link" href="contact.html">Contact</a>
+                        </li>
+                        <li class="nav-item ml-4">
+                            <a class="nav-link phone" href="tel:0790690288"><span class="fa fa-phone"></span> 0790690288</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <!--/header-->
+
+    <div class="container body-content">
+        @RenderBody()
+        <hr />
+        <footer>
+            <section class="w3l-footer-29-main">
+                <div class="footer-29 py-5 text-center">
+                    <div class="container">
+                        <div class="footer-list-29 footer-1 ">
+                            <h2><a href="index.html" class="footer-logo"><span class="fa fa-BOAT RESTAURANT"></span> BOAT RESTAURANT </a></h2>
+                            <p class="para">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Saepe qui repellat nam vero consectetur dicta eos suscipit. Numquam at minus architecto asperiores cupiditate. At molestias laborum voluptatibus numquam aperiam in.</p>
+
+                        </div>
+                        <div class="row footer-top-29">
+
+                            <div class="col-lg-4 col-md-4 col-sm-6 footer-list-29 footer-2 ">
+                                <h6 class="footer-title-29">Address</h6>
+                                <ul>
+                                    <li><p><span class="fa fa-map-marker"></span>NAIROBI,NAIROBI</p></li>
+                                </ul>
+                            </div>
+                            <div class="col-lg-4 col-md-4 col-sm-6 footer-list-29 footer-2 ">
+                                <h6 class="footer-title-29">Opening Hours</h6>
+                                <ul>
+                                    <li><p><span>Mon-Fri:</span> 9AM-11PM</p></li>
+                                    <li><p><span>Sat-Sun:</span> 10AM-1PM</p></li>
+                                </ul>
+                            </div>
+                            <div class="col-lg-4 col-md-4 col-sm-6 footer-list-29 footer-2 ">
+                                <h6 class="footer-title-29">Contact Us</h6>
+                                <ul>
+                                    <li><a href="tel:0790690288"><span class="fa fa-phone"></span> 0790690288</a></li>
+                                    <li><a href="" class="mail"><span class="fa fa-envelope-open-o"></span> support.com</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+            </section>
+            <section class="w3l-footer-29-main w3l-copyright">
+                <div class="container">
+                    <div class=" bottom-copies text-center">
+                        <p class="">© 2023. All rights reserved |
+                    </div>
+                </div>
+            </section>
+            <!-- move top -->
+            <button onclick="topFunction()" id="movetop" title="Go to top">
+                <span class="fa fa-long-arrow-up"></span>
+            </button>
+            <script>
+                // When the user scrolls down 20px from the top of the document, show the button
+                window.onscroll = function () {
+                    scrollFunction()
+                };
+
+                function scrollFunction() {
+                    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                        document.getElementById("movetop").style.display = "block";
+                    } else {
+                        document.getElementById("movetop").style.display = "none";
+                    }
+                }
+
+                // When the user clicks on the button, scroll to the top of the document
+                function topFunction() {
+                    document.body.scrollTop = 0;
+                    document.documentElement.scrollTop = 0;
+                }
+            </script>
+
+        </footer>
+    </div>
+
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+    @RenderSection("scripts", required: false)
+</body>
+</html>

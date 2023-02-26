@@ -1,0 +1,30 @@
+﻿
+@{
+    ViewBag.Title = "Contact";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Contact</h2>
+<body id="home">
+    <section class=" w3l-header-4 header-sticky">
+        <!--header-->
+
+    </section>
+
+    <script src="~/js/jquery-3.3.1.min.js"></script> <!-- Common jquery plugin -->
+    <!--bootstrap working-->
+    <script src="~/js/bootstrap.min.js"></script>
+    <!-- //bootstrap working-->
+    <!--/MENU-JS-->
+    <script>
+	$(window).on("scroll", function () {
+	  var scroll = $(window).scrollTop();
+
+	  if (scroll >= 80) {
+		$("#site-header").addClass("nav-fixed");
+	  } else {
+		$("#site-header").removeClass("nav-fixed");
+	  }
+	});
+
+
