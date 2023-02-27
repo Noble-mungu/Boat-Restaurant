@@ -10,6 +10,8 @@ namespace BOAT_RESTAURANT.Controllers
     {
         public ActionResult Index()
         {
+
+
             return View();
         }
 
