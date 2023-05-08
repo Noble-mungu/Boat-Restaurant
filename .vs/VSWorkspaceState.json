@@ -1,11 +1,10 @@
 {
   "ExpandedNodes": [
     "",
-    "\\Controllers",
     "\\Views",
     "\\Views\\Home",
     "\\Views\\Shared"
   ],
-  "SelectedNode": "\\Controllers\\HomeController.cs",
+  "SelectedNode": "\\BOAT_RESTAURANT.sln",
   "PreviewInSolutionExplorer": false
 }

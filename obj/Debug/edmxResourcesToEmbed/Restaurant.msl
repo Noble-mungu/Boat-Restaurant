@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="BoatModelStoreContainer" CdmEntityContainer="BoatEntities2">
+    <EntitySetMapping Name="Admins">
+      <EntityTypeMapping TypeName="BoatModel.Admin">
+        <MappingFragment StoreEntitySet="Admin">
+          <ScalarProperty Name="username" ColumnName="username" />
+          <ScalarProperty Name="password" ColumnName="password" />
+          <ScalarProperty Name="adminId" ColumnName="adminId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Customers">
+      <EntityTypeMapping TypeName="BoatModel.Customer">
+        <MappingFragment StoreEntitySet="Customers">
+          <ScalarProperty Name="CustomerID" ColumnName="CustomerID" />
+          <ScalarProperty Name="FirstName" ColumnName="FirstName" />
+          <ScalarProperty Name="LastName" ColumnName="LastName" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="Phone" ColumnName="Phone" />
+          <ScalarProperty Name="Address" ColumnName="Address" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Reservations">
+      <EntityTypeMapping TypeName="BoatModel.Reservation">
+        <MappingFragment StoreEntitySet="Reservations">
+          <ScalarProperty Name="ReservationID" ColumnName="ReservationID" />
+          <ScalarProperty Name="CustomerID" ColumnName="CustomerID" />
+          <ScalarProperty Name="ReservationDate" ColumnName="ReservationDate" />
+          <ScalarProperty Name="ReservationTime" ColumnName="ReservationTime" />
+          <ScalarProperty Name="NumGuests" ColumnName="NumGuests" />
+          <ScalarProperty Name="SpecialRequests" ColumnName="SpecialRequests" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>
